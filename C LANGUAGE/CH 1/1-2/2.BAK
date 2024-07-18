@@ -1,0 +1,18 @@
+
+#include<stdio.h>
+#include<conio.h>
+#define pf printf
+
+main()
+{
+     int l;
+     clrscr
+     enter the lenth of squre to find its area
+
+
+
+
+	getch();
+}
+
+}
