@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int sum(int n1, int n2)
 {
     printf("Addition of %d and %d is : %d\n\n", n1, n2, n1 + n2);
@@ -20,28 +19,25 @@ int mod(int n1, int n2)
 {
     printf("Modules of %d and %d is : %d\n\n", n1, n2, n1 % n2);
 }
-// int exit(){}
-
 void main()
 {
-	
-    int n, n1, n2;
+	int n, n1, n2;
     do
     {
 
-        printf("\nInput/Output:\n\n\n");
+        printf("\nInput/Output:\n\n");
         printf("Press 1 for +\n");
         printf("Press 2 for -\n");
         printf("Press 3 for *\n");
         printf("Press 4 for /\n");
         printf("Press 5 for %%\n");
-        printf("Press 0 for Exit\n\n");
+        printf("Press 0 for Exit\n");
 
         printf("Enter Your Choice: ");
         scanf("%d", &n);
         switch (n)
         {
-        case 1: // sum
+        case 1: 
             printf("Enter The First Number: ");
             scanf("%d", &n1);
             printf("Enter The Second Number: ");
@@ -49,36 +45,36 @@ void main()
             sum(n1, n2);
             break;
 
-        case 2: // minus
+        case 2: 
             printf("Enter The First Number: ");
             scanf("%d", &n1);
             printf("Enter The Second Number: ");
             scanf("%d", &n2);
             minus(n1, n2);
             break;
-        case 3: // mul
+        case 3: 
             printf("Enter The First Number: ");
             scanf("%d", &n1);
             printf("Enter The Second Number: ");
             scanf("%d", &n2);
             mul(n1, n2);
             break;
-        case 4: // divide
+        case 4: 
             printf("Enter The First Number: ");
             scanf("%d", &n1);
             printf("Enter The Second Number: ");
             scanf("%d", &n2);
             divide(n1, n2);
             break;
-        case 5: // mod
+        case 5: 
             printf("Enter The First Number: ");
             scanf("%d", &n1);
             printf("Enter The Second Number: ");
             scanf("%d", &n2);
             mod(n1, n2);
             break;
-        case 0:       // exit
-            continue; // skip this expression
+        case 0:       
+            continue; 
         }
     } while (n != 0);
 }
