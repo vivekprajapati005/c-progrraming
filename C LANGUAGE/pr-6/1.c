@@ -3,7 +3,7 @@ int sum(int n1, int n2)
 {
     printf("Addition of %d and %d is : %d\n\n", n1, n2, n1 + n2);
 }
-int minus(int n1, int n2)
+int subtraction(int n1, int n2)
 {
     printf("Substraction of %d and %d is : %d\n\n", n1, n2, n1 - n2);
 }
@@ -24,7 +24,6 @@ void main()
 	int n, n1, n2;
     do
     {
-
         printf("\nInput/Output:\n\n");
         printf("Press 1 for +\n");
         printf("Press 2 for -\n");
