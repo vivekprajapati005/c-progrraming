@@ -3,15 +3,16 @@
 main()
 {
 
-   void swap(int *a, int *b)
+   swap(int a, int b)
    {
     int temp;
-    temp = *a; 
-    *a = *b;   
-    *b = temp; 
+    temp = a; 
+    a = b;   
+    b = temp; 
    }
 
-int main() {
+int main() 
+ {
     int num1, num2;
 
     
@@ -25,10 +26,10 @@ int main() {
 
     
     swap(&num1, &num2);
-
-    
+ 
+ }
     printf("swapping: num1 = %d, num2 = %d\n", num1, num2);
 }
     
-}
+
 
